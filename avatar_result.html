@@ -1,0 +1,22 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+    <title>Avatar Result</title>  
+</head>  
+<body>  
+    <h2>Your AI-Generated Avatar</h2>  
+
+    {% if image_url %}  
+        <img src="{{ image_url }}" width="300" alt="AI Avatar"><br>  
+    {% else %}  
+        <p><strong>Could not generate image. Please try again.</strong></p>  
+    {% endif %}  
+
+    <p><strong>Body:</strong> {{ body_type }}</p>  
+    <p><strong>Skin Tone:</strong> {{ skin_tone }}</p>  
+    <p><strong>Hair Style:</strong> {{ hair_style }}</p>  
+    <p><strong>Dress:</strong> {{ dress_type }}</p>  
+
+    <a href="/">Back</a>  
+</body>  
+</html>

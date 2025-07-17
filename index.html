@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DressAI - Avatar</title>
+</head>
+<body>
+    <h1>DressAI</h1>
+
+    <form method="POST" action="/" enctype="multipart/form-data">
+        <label>Choose Input Method:</label><br>
+        <input type="radio" name="input_method" value="avatar" checked> Create Avatar<br>
+        <input type="radio" name="input_method" value="photo"> Upload Photo<br><br>
+
+        <!-- Avatar Input Fields -->
+        <div id="avatar-fields">
+            <label for="body_type">Body Type:</label>
+            <select name="body_type" required>
+                <option value="pear">Pear</option>
+                <option value="apple">Apple</option>
+                <option value="hourglass">Hourglass</option>
+            </select><br><br>
+
+            <label for="skin_tone">Skin Tone:</label>
+            <select name="skin_tone" required>
+                <option value="fair">Fair</option>
+                <option value="medium">Medium</option>
+                <option value="dark">Dark</option>
+            </select><br><br>
+
+            <label for="hair_style">Hair Style:</label>
+            <select name="hair_style" required>
+                <option value="bun">Bun</option>
+                <option value="braid">Braid</option>
+                <option value="open">Open</option>
+            </select><br><br>
+
+            <label for="dress_type">Dress Type:</label>
+            <select name="dress_type" required>
+                <option value="saree">Saree</option>
+                <option value="anarkali">Anarkali</option>
+                <option value="hoodie">Hoodie</option>
+            </select><br><br>
+        </div>
+
+        <!-- Photo Upload Field -->
+        <div id="photo-field">
+            <label for="user_photo">Upload Photo:</label>
+            <input type="file" name="user_photo"><br><br>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
